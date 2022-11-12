@@ -1,0 +1,54 @@
+element.style {
+    height: 939px;
+}
+.main {
+    width: 100%!important;
+    max-width: inherit!important;
+}
+.emptyframe {
+    margin: 0 auto;
+    max-width: 940px;
+    min-width: 100px;
+    background: initial;
+}
+body, html {
+    overflow: hidden!important;
+    height: 100%!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-overflow-scrolling: auto;
+}
+body {
+    min-width: 940px;
+}
+html, body {
+    height: 100%;
+    color: #161616;
+    font: 100%/1.25em Verdana,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #eee;
+}
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #404040;
+}
+html, body {
+    background-color: #ffffff;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    margin: 8px;
+}

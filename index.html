@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/script.js"></script>
+    <title>Органайзер</title>
+</head>
+<body>
+    <div class="service-content">
+        <header id="serviceHeader">
+            <nav class="privary nav-main">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div title="Показать/скрыть меню сервиса" class="services-menu-icon"></div>
+                            </td>
+                            <td>
+                                <div class="logo-block"></div>
+                                <h1>Онлайн органайзер</h1>
+                            </td>
+                            <td>
+                                <ul id="admin-menu" class="admin-menu">
+                                    <li>
+                                        <a id="login-block" href=""></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </header>
+        <div class="fullscreen">
+            <div id="personalgoalsframe">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width = "100%">
+                                <div id="tabsmain">
+                                    <ul class="ui-tabs">
+                                        <li class="ui-state-default">
+                                            <a href="">
+                                                <div class="icon" title="Дела"></div>
+                                                " Дела"
+                                            </a>
+                                        </li>
+                                        <li class="ui-state-default">
+                                            <a href="">
+                                                <div class="icon" title="Приоритеты"></div>
+                                                " Приоритеты"
+                                            </a>
+                                        </li>
+                                        <li class="ui-state-default">
+                                            <a href="">
+                                                <div class="icon" title="Важно-Срочно"></div>
+                                                " Важно-Срочно"
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div id="tabs-tasks" class="ui-tabs-panel">
+                                        <div id="tasks" item-name="Дело" style="visibility: visible;">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="w100">
+                                                            <p class="new-user-help">Составьте список дел, которые вам нужно выполнить</p>
+                                                            <table class="newTask new-item">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input class="newTaskName" x-webkit-speech speech title="Название нового дела" placeholder="Введите название нового дела" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                                                                            <input type="checkbox" id="chkEditOnAdd">
+                                                                        </td>
+                                                                        <td>
+                                                                            <button class="addNewtask btn">Добавить дело</button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div id="tabs-priorities" class="ui-tabs-panel">
+                                        <div id="priorities" style="visibility: visible;">
+                                            <div class="emptyform" style="display: block;">
+                                                <h3>Нет дел для приоритизации</h3>
+                                                <p>Добавьте их на вкладке дела</p>
+                                            </div>
+                                            <div class="form" style="display: none;">
+                                                <div class="comparers">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tabs-urgensy" class="ui-tabs-panel"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
