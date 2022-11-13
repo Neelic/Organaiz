@@ -81,6 +81,34 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
+                                                            <div id="item-conteiner">
+                                                                <ul class="tasksList">
+                                                                    <li class="task item">
+                                                                        <table class="taskLine">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="selection">
+                                                                                        <input type="checkbox">
+                                                                                    </td>
+                                                                                    <td class="td-name-cell">
+                                                                                        <p id="taskName"></p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p id="taskBegin" style="display: none;"></p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p id="taskDeadLine" style="display: none;"></p>
+                                                                                    </td>
+                                                                                    <td id="taskPriority" style="display: none;">0</td>
+                                                                                    <td>
+                                                                                        <div id="state-done" title="Отметить делоЮ как выполненое"></div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -95,12 +123,214 @@
                                             </div>
                                             <div class="form" style="display: none;">
                                                 <div class="comparers">
-                                                    
+
                                                 </div>
+                                                <table class="priority-tasks">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="task-material-item">
+                                                                    <div class="scroll-container" style="display: none;">
+                                                                        <table>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="tabs-urgensy" class="ui-tabs-panel"></div>
+                                    <div id="tabs-urgensy" class="ui-tabs-panel">
+                                        <div id="urgency" style="visibility: visible;">
+                                            <div id="urgency-box" class="scroll-container">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td rowspan="12">Важность</td>
+                                                            <td>10</td>
+                                                            <td c-i="10" c-u="0"></td>
+                                                            <td c-i="10" c-u="1"></td>
+                                                            <td c-i="10" c-u="2"></td>
+                                                            <td c-i="10" c-u="3"></td>
+                                                            <td c-i="10" c-u="4"></td>
+                                                            <td c-i="10" c-u="5"></td>
+                                                            <td c-i="10" c-u="6"></td>
+                                                            <td c-i="10" c-u="7"></td>
+                                                            <td c-i="10" c-u="8"></td>
+                                                            <td c-i="10" c-u="9"></td>
+                                                            <td c-i="10" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td c-i="9" c-u="0"></td>
+                                                            <td c-i="9" c-u="1"></td>
+                                                            <td c-i="9" c-u="2"></td>
+                                                            <td c-i="9" c-u="3"></td>
+                                                            <td c-i="9" c-u="4"></td>
+                                                            <td c-i="9" c-u="5"></td>
+                                                            <td c-i="9" c-u="6"></td>
+                                                            <td c-i="9" c-u="7"></td>
+                                                            <td c-i="9" c-u="8"></td>
+                                                            <td c-i="9" c-u="9"></td>
+                                                            <td c-i="9" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td c-i="8" c-u="0"></td>
+                                                            <td c-i="8" c-u="1"></td>
+                                                            <td c-i="8" c-u="2"></td>
+                                                            <td c-i="8" c-u="3"></td>
+                                                            <td c-i="8" c-u="4"></td>
+                                                            <td c-i="8" c-u="5"></td>
+                                                            <td c-i="8" c-u="6"></td>
+                                                            <td c-i="8" c-u="7"></td>
+                                                            <td c-i="8" c-u="8"></td>
+                                                            <td c-i="8" c-u="9"></td>
+                                                            <td c-i="8" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td c-i="7" c-u="0"></td>
+                                                            <td c-i="7" c-u="1"></td>
+                                                            <td c-i="7" c-u="2"></td>
+                                                            <td c-i="7" c-u="3"></td>
+                                                            <td c-i="7" c-u="4"></td>
+                                                            <td c-i="7" c-u="5"></td>
+                                                            <td c-i="7" c-u="6"></td>
+                                                            <td c-i="7" c-u="7"></td>
+                                                            <td c-i="7" c-u="8"></td>
+                                                            <td c-i="7" c-u="9"></td>
+                                                            <td c-i="7" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td c-i="6" c-u="0"></td>
+                                                            <td c-i="6" c-u="1"></td>
+                                                            <td c-i="6" c-u="2"></td>
+                                                            <td c-i="6" c-u="3"></td>
+                                                            <td c-i="6" c-u="4"></td>
+                                                            <td c-i="6" c-u="5"></td>
+                                                            <td c-i="6" c-u="6"></td>
+                                                            <td c-i="6" c-u="7"></td>
+                                                            <td c-i="6" c-u="8"></td>
+                                                            <td c-i="6" c-u="9"></td>
+                                                            <td c-i="6" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td c-i="5" c-u="0"></td>
+                                                            <td c-i="5" c-u="1"></td>
+                                                            <td c-i="5" c-u="2"></td>
+                                                            <td c-i="5" c-u="3"></td>
+                                                            <td c-i="5" c-u="4"></td>
+                                                            <td c-i="5" c-u="5"></td>
+                                                            <td c-i="5" c-u="6"></td>
+                                                            <td c-i="5" c-u="7"></td>
+                                                            <td c-i="5" c-u="8"></td>
+                                                            <td c-i="5" c-u="9"></td>
+                                                            <td c-i="5" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td c-i="4" c-u="0"></td>
+                                                            <td c-i="4" c-u="1"></td>
+                                                            <td c-i="4" c-u="2"></td>
+                                                            <td c-i="4" c-u="3"></td>
+                                                            <td c-i="4" c-u="4"></td>
+                                                            <td c-i="4" c-u="5"></td>
+                                                            <td c-i="4" c-u="6"></td>
+                                                            <td c-i="4" c-u="7"></td>
+                                                            <td c-i="4" c-u="8"></td>
+                                                            <td c-i="4" c-u="9"></td>
+                                                            <td c-i="4" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td c-i="3" c-u="0"></td>
+                                                            <td c-i="3" c-u="1"></td>
+                                                            <td c-i="3" c-u="2"></td>
+                                                            <td c-i="3" c-u="3"></td>
+                                                            <td c-i="3" c-u="4"></td>
+                                                            <td c-i="3" c-u="5"></td>
+                                                            <td c-i="3" c-u="6"></td>
+                                                            <td c-i="3" c-u="7"></td>
+                                                            <td c-i="3" c-u="8"></td>
+                                                            <td c-i="3" c-u="9"></td>
+                                                            <td c-i="3" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td c-i="2" c-u="0"></td>
+                                                            <td c-i="2" c-u="1"></td>
+                                                            <td c-i="2" c-u="2"></td>
+                                                            <td c-i="2" c-u="3"></td>
+                                                            <td c-i="2" c-u="4"></td>
+                                                            <td c-i="2" c-u="5"></td>
+                                                            <td c-i="2" c-u="6"></td>
+                                                            <td c-i="2" c-u="7"></td>
+                                                            <td c-i="2" c-u="8"></td>
+                                                            <td c-i="2" c-u="9"></td>
+                                                            <td c-i="2" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td c-i="1" c-u="0"></td>
+                                                            <td c-i="1" c-u="1"></td>
+                                                            <td c-i="1" c-u="2"></td>
+                                                            <td c-i="1" c-u="3"></td>
+                                                            <td c-i="1" c-u="4"></td>
+                                                            <td c-i="1" c-u="5"></td>
+                                                            <td c-i="1" c-u="6"></td>
+                                                            <td c-i="1" c-u="7"></td>
+                                                            <td c-i="1" c-u="8"></td>
+                                                            <td c-i="1" c-u="9"></td>
+                                                            <td c-i="1" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>0</td>
+                                                            <td c-i="0" c-u="0"></td>
+                                                            <td c-i="0" c-u="1"></td>
+                                                            <td c-i="0" c-u="2"></td>
+                                                            <td c-i="0" c-u="3"></td>
+                                                            <td c-i="0" c-u="4"></td>
+                                                            <td c-i="0" c-u="5"></td>
+                                                            <td c-i="0" c-u="6"></td>
+                                                            <td c-i="0" c-u="7"></td>
+                                                            <td c-i="0" c-u="8"></td>
+                                                            <td c-i="0" c-u="9"></td>
+                                                            <td c-i="0" c-u="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>0</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td colspan="12">Срочность</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
