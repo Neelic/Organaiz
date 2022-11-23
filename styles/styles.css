@@ -265,7 +265,7 @@ input[type=checkbox] {
 
 .taskSettingsContainer {
     min-width: 500px;
-    position: absolute;
+    position: fixed;
     width: 800px;
     height: 700px;
     margin-left: 50px;

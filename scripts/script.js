@@ -52,3 +52,9 @@ document.getElementById('admin-menu').onclick = function() {
     ul.appendChild(li);
     //alert(li.id);
   }
+
+  document.getElementById('taskSettingsBtn').onclick = function() {
+    var el = document.getElementById('taskSettingsPanel');
+    el.style.display = 'block';
+    //el.style.display === 'none' ? el.style.display = 'block' : el.style.display = 'none';
+  }
