@@ -48,13 +48,12 @@ document.getElementById('admin-menu').onclick = function() {
     var li = document.getElementById('task item').cloneNode(true);
     li.style.display = 'block';
     li.firstElementChild.rows[0].cells[1].firstElementChild.innerText = taskName;
-    //li.setAttribute("id", "task item");
+    //li.firstElementChild.rows[0].cells[6].firstElementChild.setAttribute("script", "taskSettingsBtn" + ul.childElementCount);
     ul.appendChild(li);
     //alert(li.id);
   }
 
-  document.getElementById('taskSettingsBtn').onclick = function() {
+  function settingsBtn() {
     var el = document.getElementById('taskSettingsPanel');
-    el.style.display = 'block';
-    //el.style.display === 'none' ? el.style.display = 'block' : el.style.display = 'none';
+    el.style.display === 'none' ? el.style.display = 'block' : el.style.display = 'none';
   }
