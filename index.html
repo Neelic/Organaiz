@@ -123,28 +123,28 @@
                                                         <td style="position: absolute;">
                                                             <div class="taskSettingsContainer">
                                                                 <div id="taskSettingsPanel" style="display: block;">
-                                                                    <p>Настройки выбранного дела</p>
-                                                                    <table>
+                                                                    <p style="font-size: 24px;">Настройки выбранного дела</p>
+                                                                    <table style="margin-top: 30px;">
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td><p>Название дела</p></td>
                                                                                 <td><p id="taskNameSet"></p></td>
                                                                             </tr>
-                                                                            <tr>
+                                                                            <tr style="height: 50px;">
                                                                                 <td>От</td>
-                                                                                <td><input type="date" name="Начало" id="startTask"></td>
-                                                                                <td>до</td>
+                                                                                <td><input type="date" name="Начало" id="startTask"> до</td>
                                                                                 <td><input type="date" name="Конец" id="endTask"></td>
+                                                                                <td></td>
                                                                             </tr>
-                                                                            <tr>
-                                                                                <td><p>Приоритет</p></td>
+                                                                            <tr style="height: 50px;">
+                                                                                <td style="padding-top: 15px;"><p>Приоритет</p></td>
                                                                                 <td><select name="Приоритет" id="prioritySettings">
                                                                                     <option value="low">Низкий</option>
                                                                                     <option value="medium">Средний</option>
                                                                                     <option value="hight">Высокий</option>
                                                                                 </select></td>
                                                                             </tr>
-                                                                            <tr>
+                                                                            <tr style="height: 100px;">
                                                                                 <td><button id="saveSettingsBtn">Сохранить</button></td>
                                                                                 <td><button id="deleteSettingsBtn">Удалить</button></td>
                                                                             </tr>

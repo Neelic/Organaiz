@@ -190,7 +190,7 @@ li {
     margin-top: 10px;
 }
 
-.addNewtaskbtn{
+.addNewtaskbtn {
     background-color: #05386B;
     color: white;
     font-size: 20px;
@@ -278,4 +278,41 @@ input[type=checkbox] {
 #taskSettingsPanel {
     margin-top: 5px;
     margin-left: 5px;
+}
+
+#taskNameSet {
+    display: block;
+    padding: 3px;
+    margin-left: 10px;
+    /*background-color: #041e38;*/
+    color: white;
+    border-radius: 3px;
+}
+
+#startTask {
+    background-color: #041e38;
+    color: white;
+    margin-left: -107px;
+    margin-right: 3px;
+}
+
+#endTask {
+    background-color: #041e38;
+    color: white;
+    margin-left: -45px;
+}
+
+#prioritySettings{
+    background-color: #041e38;
+    color: white;
+    margin-left: -25px;
+}
+
+#saveSettingsBtn, #deleteSettingsBtn{
+    background-color: #041e38;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 135px;
+    text-align: start;
 }
