@@ -1,4 +1,6 @@
-document.getElementById('admin-menu').onclick = function() {
+  //document.getElementById('admin-menu').onclick = openCloseAdminMenu();
+
+  function openCloseAdminMenu() {
     var el = document.getElementById('fancybox-wrap');
     el.style.display === 'none' ? el.style.display = 'block' : el.style.display = 'none';
     el = document.getElementById('overlay');
@@ -58,3 +60,38 @@ document.getElementById('admin-menu').onclick = function() {
     var namePanel = document.getElementById('taskNameSet');
     namePanel.innerText = nameTask;
   }
+
+ document.getElementById('authSubmit').onclick = function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'Authorisation.php', false, document.getElementById('idAuthUser').value, document.getElementById('idAuthPass').value);
+  xhr.send();
+
+  if (xhr.status == 4) {
+    alert('Вы успешно авторизировались');
+    openCloseAdminMenu();
+  }
+  else if (xhr.status == 5) {
+    alert('Неверные логин и/или пароль');
+  } else {
+    alert('Произошло нечто. Код: ' + xhr.status);
+  }
+ }
+
+ document.getElementById('regSubmit').onclick = function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'Register.php', false, document.getElementById('idAuthUser').value, document.getElementById('idAuthPass').value);
+  xhr.send();
+
+  if (xhr.status == 6) {
+    alert('Вы успешно зарегистрировались');
+    openCloseAdminMenu();
+  } else if (xhr.status == 1) {
+    alert('Поля для регистрации пустые');
+  } else if (xhr.status == 2) {
+    alert('Пароли не совпадают');
+  } else if (xhr.status == 3) {
+    alert('Такой email уже зарегистрирован');
+  } else {
+    alert('Произошло нечто. Код: ' + xhr.status);
+  }
+ }
